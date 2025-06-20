@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 # Cargar datos
 @st.cache_data
 def cargar_datos():
-    xls = pd.ExcelFile("C:\\Users\\RONAL\\Documents\\unal\\Proyecto_investigacion.xlsx")
+    xls = pd.ExcelFile("Proyecto_investigacion.xlsx")
     hojas = {sheet: xls.parse(sheet) for sheet in xls.sheet_names}
     return hojas
 
